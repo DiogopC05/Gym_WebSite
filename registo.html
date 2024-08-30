@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<!--Página que permite o registo do utilizador-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="Img/Logo Maximal pequeno.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   
+  <title>Maximal - Registo</title>
+</head>
+
+<body class="bodysessao">
+  <div class="iniciosessao">
+    <form class="form_user" id="registo">
+      <div class="Cruz">
+        <button type="button" onclick="CruzMain()">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <h1 class="form_titulo">Registo</h1>
+
+      <div class="form_msg_erro" id="form_msg_erro_geral"></div>
+      <div class="form_input_espaco">
+        <input type="text" class="form_input" id="nome_r" required autofocus placeholder="Nome" onblur="verificarNome()">
+      </div>
+      <div class="form_msg_erro" id="form_msg_erro_nome"></div>
+      <div class="form_input_espaco">
+        <input type="text" class="form_input" id="apelido_r" onblur="verificarApelido()" required autofocus placeholder="Apelido">
+      </div>
+      <div class="form_msg_erro" id="form_msg_erro_apelido"></div>
+      <div class="form_input_espaco">
+        <input type="text" class="form_input" id="email_r" onblur="verificarEmail()" required autofocus placeholder="E-mail">
+      </div>
+      <div class="form_msg_erro" id="form_msg_erro_email"></div>
+      <div class="form_input_espaco" id="password_conteudo">
+        <input type="password" class="form_input" id="password_r" onblur="verificarPass()" required autofocus placeholder="Password">
+        <i id="visibilidade"><span class="material-symbols-outlined" id="passIcon">visibility</span></i>
+      </div>
+      <div class="form_msg_erro" id="form_msg_erro_pass"></div>
+      <div class="form_input_espaco">
+        <input type="password" class="form_input" id="cpassword_r" onblur="verificarCPass()" required autofocus placeholder="Confirmar Password">
+      </div>
+      <div class="form_msg_erro" id="form_msg_erro_cpass"></div>
+      <div class="form_input_espaco">
+        <input type="number" class="form_input" id="nsocio_r" required autofocus placeholder="Número de Sócio">
+      </div>
+      <div class="form_msg_erro"></div>
+      <p class="form_infor">*Ao se registar, compromete-se a concordar com os <a href="infolegal.html" class="form_legal">termos e condições</a>  da <em>Maximal</em></p>
+</p>
+      <button class="form_submit" type="submit" onclick="verificarForm()">CONTINUAR</button>
+      <p class="form_texto">Já se registou? <br><a href="iniciosessao.html" class="form_link">Inicie Sessão</a></p>
+      
+      
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+<!--Trabalho realizado por Diogo Rego (nº6) e Diogo Carreira (nº7)-->

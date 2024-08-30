@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!--Página com os serviços (personal trainer, natação, consultas de nutrição e DJ ao vivo)-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="Img/Logo Maximal pequeno.png">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2? family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <title>Maximal - Serviços</title>
+</head>
+
+<body>
+  <header>
+    <!--Barra de navegação no topo da página-->
+    <nav class='navigation'>
+      <a href="index.html"><img class="logo" src="Img/Logo Maximal 1.png" alt="logo"></a>
+      <ul class="ulnav">
+        <li><a class='inicio-class' href='./index.html'>Início</a></li>
+        <li><a class='servicos-class' href='#servicos'>Serviços</a></li>
+        <li><a class='treino-class' href='./treino.html'>Treino</a></li>
+        <li><a class='info-class' href='./info.html'>Info</a></li>
+        <li class='sessao-class'><input class="imgUser" onclick="CheckInicioSessao()" type="image"
+            src="Img/AccountLogo.png" id="imgUser"></li></input>
+      </ul>
+      <!--Dropdown Menu-->
+      <div class="menuConteudo" id="menuDropdown">
+        <div class="menuDropdown">
+          <div class="userInfo">
+            <img src="Img/AccountLogo.png" alt="Imagem de Logo" id="avatar">
+            <h3 id="User_Nome">Utilizador</h3>
+          </div>
+          <hr />
+
+          <a href="editarPerfil.html" class="menuLink">
+            <span class="material-symbols-outlined">manage_accounts</span>
+            <p>Editar Perfil</p>
+            <div class="seta">></div>
+          </a>
+
+          <a href="dados.html" class="menuLink">
+            <span class="material-symbols-outlined">equalizer</span>
+            <p>Dados</p>
+            <div class="seta">></div>
+          </a>
+
+          <a href="loja.html" class="menuLink">
+            <span class="material-symbols-outlined">storefront</span>
+            <p>Loja</p>
+            <div class="seta">></div>
+          </a>
+
+          <a href="#" class="menuLink" onclick="LogOut()">
+            <span class="material-symbols-outlined">login</span>
+            <p>Sair</p>
+            <div class="seta">></div>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!--Título da página e imagem no fundo-->
+    <div class="ImagemGymservicos">
+      <section class="backgroundimageservicos">
+        <h1>Serviços</h1>
+      </section>
+    </div>
+  </header>
+
+  <!--Informação promotora do ginásio-->
+  <div class="Informacao-promotora">
+    <h2>A <em>Maximal</em>, em conjunto com a sua equipa multidisciplinar, oferece ao cliente serviços de qualidade da
+      qual se orgulha.
+    </h2>
+  </div>
+  <!--Lista dos serviçoes prestados-->
+  <div class="servicos-enumeração">
+
+    <section class="ServiçoPersonalTrainer">
+      <img class="servicos-imagens" src="Img/PersonalTrainer.jpg">
+      <div class="PT-conteúdo">
+        <h2>Personal Trainer</h2>
+        <p>
+          Se está à procura de perder peso, ganhar massa muscular ou simplesmente ficar em melhor forma, estamos aqui
+          para o ajudar. Os nossos Personal Trainers irão trabalhar consigo para desenvolver um plano de exercícios
+          personalizado que se adequa às suas necessidades e objetivos, e fornecerão a orientação e apoio de que precisa
+          para continuar no caminho certo. Venha experimentar, na <em>Maximal</em> !
+        </p>
+      </div>
+    </section>
+
+    <section class="ServiçoNatação">
+      <div class="NT-conteúdo">
+        <h2>Natação</h2>
+        <p>
+          A Natação é um dos desportos mais completos, permitindo lidar com grupos musculares diversos de forma
+          simultânea. É uma atividade divertida, desafiadora e adaptada a várias faixas etárias. A <em>Maximal</em>
+          dispõe de aulas de natação para todos as idades, com profissionais de excelência.
+        </p>
+      </div>
+      <img class="servicos-imagens" src="Img/Pool.jpg">
+    </section>
+
+    <section class="ServiçoConsultaNutrição">
+      <div class="CN-conteúdo">
+        <h2>Consultas de nutrição</h2>
+        <p>
+          Para atingir os seus objetivos é necessário comer. Supreendido? Comer bem!<br> Para o ajudar a escolher os
+          alimentos certos para a sua dieta, baseados no seu genótipo, temos consultas de nutrição para si que
+          certamente o ajudarão a tomar as melhores escolhas alimentares.
+        </p>
+      </div>
+      <img class="servicos-imagens" src="Img/Nutrição.jpg">
+    </section>
+
+    <section class="ServiçoDJ">
+      <div class="DJ-conteúdo">
+        <h2>DJ ao vivo e Playlist</h2>
+        <p>
+          A motivação dos nossos praticantes é importante. É por isso que a <em>Maximal</em> inovou com o apetrechamento
+          de equipamento eletrónico e de Dj ao longo do dia. Estamos sempre abertos a novas sugestões musicais! Contudo,
+          já temos a nossa playlist.
+        </p>
+      </div>
+
+      <img class="servicos-imagens" src="Img/DJ.jpg">
+    </section>
+
+  </div>
+
+  <!--Playlist do Spotify-->
+  <iframe style="border-radius:12px"
+    src="https://open.spotify.com/embed/playlist/2PAGgoyhVYdC0q6vnb8qAL?utm_source=generator" width="50%" height="380"
+    frameBorder="0" allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+  <!--Playlist de músicas sugeridas-->
+  <div class="musicassujestoes">
+    <h2>Ouça também as sugestões dos praticantes!</h2>
+    <audio controls class="audio">
+      <source src="/Audio/Rihanna.mp3" type="audio/mp3">
+    </audio>
+    <audio controls class="audio">
+      <source src="/Audio/RememberTheName.mp3" type="audio/mp3">
+    </audio>
+    <audio controls class="audio">
+      <source src="/Audio/Believer.mp3" type="audio/mp3">
+    </audio>
+  </div>
+
+  <!--Promoção da loja-->
+  <section class="ServicoLoja">
+    <img class="servicos-imagens" src="Img/Loja.jpeg">
+    <div class="PT-conteúdo">
+      <h2>Loja</h2>
+      <p>
+        Na loja <em>Maximal</em> encontrará tudo o que precisa para se sentir confortável e estiloso enquanto pratica o
+        seu exercício favorito.
+        <!-- Desde ténis de corrida a camisolas de treino, temos tudo o que precisa para se sentir pronto para enfrentar qualquer desafio.-->
+        Inicie sessão ou registe-se gratuitamente para nos visitar e veja como podemos ajudá-lo a atingir o seu melhor
+        na moda desportiva!<br>
+      </p>
+    </div>
+
+
+  </section>
+
+  <!--Rodapé-->
+  <div class="rodape">
+    <footer>
+      <ul class="rodape-lista">
+        <li class="rodape-lista"><a href="./infolegal.html#termos">Termos e Condições</a></li>
+        <li class="rodape-lista"><a href="./infolegal.html#privacidade">Política de privacidade</a></li>
+        <li class="rodape-lista"><a href="https://www.livroreclamacoes.pt/" target="_blank">Livro de Reclamações</a>
+        </li>
+      </ul>
+      <p id="copyright">Maximal © <span id="ano"></span> | Todos os direitos reservados</p>
+    </footer>
+  </div>
+  <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>
+
+<!--Trabalho realizado por Diogo Rego (nº6) e Diogo Carreira (nº7)-->

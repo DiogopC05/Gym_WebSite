@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<!--Página com a Loja Online-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="Img/Logo Maximal pequeno.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    
+  <title>Maximal - Loja Online</title>
+</head>
+
+<body class="bodyLoja">
+  <header>
+    <div class="LojaHead">
+      <h1><a href="loja.html" id="link">Loja Maximal</a></h1>
+      <div class="LojaLinks">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="SobreLoja.html">Sobre</a></li>
+           <li><a href="carrinho.html"><span class="material-symbols-outlined">shopping_cart</span><span id="quantidadeP"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div id="detalhesproduto" class="detalhesproduto">
+    <div class="produtoimg">
+      <img src="Img/Sapato1Cor1.png" alt="Pack de Sócio" width="100%" id="ImagemGrande">
+      <div class="ImagensPequenas">
+        <div class="ImagensPequenasCol">
+          <img src="Img/Sapato1Cor1.png" alt="Pack de Sócio" width="100%" class="ImagemPequena">
+        </div>
+        <div class="ImagensPequenasCol">
+          <img src="Img/Sapato1Cor2.png" alt="Pack de Sócio" width="100%" class="ImagemPequena">
+        </div>
+      <div class="ImagensPequenasCol">
+          <img src="Img/Sapato1Cor3.png" alt="Pack de Sócio" width="100%" class="ImagemPequena">
+        </div>
+    </div>
+  </div>
+  <div class="DetalhesEscritos">
+    <h6>Início / Calçado <button class="botaovoltar" onclick="window.location.href='loja.html';">Voltar</button> </h6>
+    <h3 id="nomeProduto">Nike Air Zoom Pegasus 39 Shield</h3>
+    <h2 id="precoProduto">120.00€</h2> 
+    <select id="tamanho">
+      <option>Escolha o Tamanho</option>
+      <option>EU 38</option>
+      <option>EU 39</option>
+      <option>EU 40</option>
+      <option>EU 41</option>
+      <option>EU 42</option>
+      <option>EU 43</option>
+    </select>
+    <input id="quantidade" type="number" value="1" min="1">
+    <button id="botaocarrinho">Adicionar ao Carrinho</button>
+    <h3>Detalhes do produto</h3>
+    <span>As sapatilhas Nike Air Zoom Pegasus 39 Shield são o calçado perfeito para corredores que enfrentam condições climáticas adversas. Com uma parte superior em material sintético e têxtil resistente à água, essas sapatilhas mantêm os pés secos e quentes, mesmo em dias chuvosos. A tecnologia Nike Air Zoom proporciona uma amortização responsiva e dinâmica para garantir que você desfrute de uma corrida suave e confortável. Além disso, a sola de borracha proporciona aderência e durabilidade, enquanto a entressola de espuma Phylon oferece estabilidade e suporte. O design minimalista e elegante das sapatilhas Nike Air Zoom Pegasus 39 Shield torna-as perfeitas para usar no dia-a-dia, mas também proporciona um desempenho desportivo excecional.</span>
+ </div>
+</div>   
+    <div class="PSócio" class="CalcasConteudo">
+    <h2>Produtos populares</h2>
+    <hr>
+    <div class="fila2">
+      <div class="coluna5" onclick="window.location = 'produtoSweat1.html'" >
+        <img src="Img/Sweat1Cor1.jpg">
+        <h4>Adidas Adicolor Essentials Trefoil</h4>
+        <p>27.10€</p>  
+        </div>
+      
+      <div class="coluna5" onclick="window.location = 'produtoSapato2.html'">
+        <img src="Img/Sapato2Cor1.png">
+        <h4>Nike Run Swift 2</h4>
+        <p>59.99€</p> 
+      </div>
+      <div class="coluna5"  onclick="window.location = 'produtoCalcas2.html'">
+        <img src="Img/Calcas2Cor1.jpg">
+        <h4>Adidas Calças Trefoil Adicolor Essentials</h4>
+        <p>22.80€</p> 
+      </div>
+      <div class="coluna5" onclick="window.location = 'produtoSweat5.html'">
+        <img src="Img/Sweat5Cor1.jpg">
+        <h4>Puma Essential S/Capuz Sweatshirt</h4>
+        <p>34.90€</p> 
+      </div>
+      <div class="coluna5" onclick="window.location = 'produtoSweat3.html'">
+        <img src="Img/Sweat3Cor1.jpg">
+        <h4>Nike Cornell 3.0 PO</h4>
+        <p>39.70€</p> 
+      </div>
+    </div>
+  </div>
+<div class="rodape">
+    <footer>
+      <ul class="rodape-lista">
+        <li class="rodape-lista"><a href="./infolegal.html">Termos e Condições</a></li>
+        <li class="rodape-lista"><a href="./infolegal.html">Política de privacidade</a></li>
+        <li class="rodape-lista"><a href="https://www.livroreclamacoes.pt/" target="_blank">Livro de Reclamações</a>
+        </li>
+      </ul>
+      <p id="copyright">Maximal © <span id="ano"></span> | Todos os direitos reservados</p>
+    </footer>
+  </div>
+  <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>
+<!--Trabalho realizado por Diogo Rego (nº6) e Diogo Carreira (nº7)-->
+  

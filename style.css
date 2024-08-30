@@ -1,0 +1,1876 @@
+/* -- Código geral -- */
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+/*Barra de scroll*/
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0a4f66;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0a4f66;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #edeef0;
+}
+
+
+
+/*-- Barra de navegação --*/
+.navigation {
+  background: #252525;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 1;
+}
+
+.navigation ul {
+  list-style: none;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation ul li {
+  margin: 30px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.ulnav a {
+  color: #53abb3;
+  text-decoration: none;
+  padding: 30px; 
+}
+
+.navigation ul li a:hover {
+  background-color: white;
+  border-radius: 3px;
+}
+/*-- Menu Dropdown --*/
+.sessao-class input {
+  width: 70px;
+  padding:0;
+  margin-bottom: 0px;
+  position: relative;
+}
+
+.navigationL {
+  background: #252525;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 1;
+}
+
+.navigation input[type=text] {
+  font-size: 17px;
+  width: 200px;
+  height: 25px;
+  margin: 40px 30px 30px 30px;
+  padding: 20px;
+} 
+
+.menuConteudo {
+  position: absolute;
+  top: 100%;
+  right: 6%;
+  width: 300px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+.menuConteudo.abrir {
+   max-height: 400px;
+}
+.menuDropdown {
+  background-color: #252525;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+
+.userInfo h3 {
+  font-weight: 400;
+  color: #eeeeee
+}
+
+.userInfo img {
+  width: 70px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.menuDropdown hr {
+  border: 0;
+  height: 1px;
+  width:100%;
+  margin: 15px 0 10px;
+  background-color: #b28e0a;
+}
+
+.menuLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #a39f9f;
+  margin: 12px 0; 
+}
+
+.menuLink p {
+  width: 100%;
+}
+
+.menuLink span {
+  margin-right: 20px;
+}
+
+.seta {
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.menuLink:hover .seta {
+  transform: translateX(5px);
+}
+
+.menuLink:hover p {
+  color:#53abb3;
+  font-weight: 600;
+}
+
+#imgUser {
+  border-radius: 50%;
+}
+
+/* -- Logo do site -- */
+.logo {
+  float: left;
+  width: 200px;
+  height: 200x;
+}
+
+/* -- Página principal -- */
+/*Título da página e imagem no fundo*/
+.ImagemGym {
+  margin-top: 50px;
+  height:600px;
+}
+
+.backgroundimagemaximal {  
+  background: rgba(0,0,0, 0.7)url("Img/gym interior.png");
+  background-blend-mode: darken;
+  width: 100%;
+  height: 800px;
+  z-index: 0;
+}
+
+.backgroundimagemaximal h1 {
+  color: white;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  padding: 300px;
+} 
+
+/*Mensagem promocional com vídeo no fundo*/
+.videoserviço p {
+  font-size: 70px;
+}
+
+.videoserviço {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 200px 0;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background: rgba(0,0,0, 0.3); 
+}
+
+.videoserviço h2 {
+  border: 5px solid white;
+  border-radius: 40px;
+  padding: 1%;
+  background: rgba(0,0,0, 0.5);
+  font-size: 40px;
+}
+
+.videoserviço a {
+  text-decoration: none;
+  color: white;
+}
+
+.videoserviço a:hover {
+  color: #53abb3;
+}
+
+.videoback {  
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 120%;
+  max-height: 120%;
+  z-index: -1;
+}
+
+/*Mensagem promocional sobre a alimentação*/
+.AlimentacaoInformacao {
+  background: rgba(0,0,0, 0.5)url("Img/AlimentacaoInicio.jpg");
+  background-blend-mode: darken;
+  background-size: 2000px;
+  width: 100%;
+  height: 600px;
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*Ligação a blogs externos*/
+.BlogsBack {
+  width: 100%;
+  padding-bottom: 100px;
+  background-color: #d3cfcf;
+}
+
+.Blogs {
+  background-color: #d3cfcf;
+}
+
+.Blogs h2 {
+  font-size: 50px;
+  text-align: center;
+  padding: 50px;
+}
+
+.BlogsEnumeração {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+}
+
+.Blog {
+  width: 400px;
+  height: 300px;
+  background: gray;
+  margin: 10px;
+  font-size: 20px;
+  color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#LePasseVit {
+  background: rgba(0,0,0, 0.7)url("Img/BlogLePasseVite.png");
+  background-blend-mode: darken;
+}
+
+#DasSpice {
+  background: rgba(0,0,0, 0.7)url("Img/BlogDasSpice.png");
+  background-blend-mode: darken;
+}
+
+#BarbaraNutricao {
+  background: rgba(0,0,0, 0.7)url("Img/BlogBarbaraNutricao.png");
+  background-blend-mode: darken;
+}
+
+#AnaCampos {
+  background: rgba(0,0,0, 0.7)url("Img/BlogAnaCampos.png");
+  background-blend-mode: darken;
+}
+
+#NutricaoCoracao {
+  background: rgba(0,0,0, 0.7)url("Img/BlogNutricaoCoracao.png");
+  background-blend-mode: darken;
+  background-size: cover; 
+}
+
+#AnitaHealthy {
+  background: rgba(0,0,0, 0.7)url("Img/BlogAnitaHealthy.png");
+  background-blend-mode: darken;
+  background-size: cover;
+}
+
+.BlogsEnumeração h3 {
+  border: 3px solid grey;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.BlogsEnumeração a {
+  text-decoration: none;
+  color: white;
+}
+
+.BlogsEnumeração a:hover {
+  color: #53abb3;
+  background-color: rgba(0,0,0, 0.3);
+  padding: 10px;
+}
+
+/*Números relacionados com a empresa*/
+.Numeracaoempresa {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.Numeracaoempresa p {
+  font-size: 30px;
+  color: #404040;
+}
+
+.Numeracaoempresa h2 {
+  font-size: 50px;
+}
+
+/*Ligação para redes sociais*/
+.Media {
+  background: rgba(0,0,0, 0.7)url("Img/siganosimage.jpg");
+  background-blend-mode: darken;
+  background-size: cover;
+  height: 400px;
+  color: white;
+  text-align: center;
+  padding: 60px;
+  font-size: 30px;
+}
+
+.MediaImages {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  padding-top: 80px;
+}
+
+/* -- Página dos serviços -- */
+/*Título da página e imagem no fundo*/
+.backgroundimageservicos { 
+  background: rgba(0,0,0, 0.7)url("Img/Gym servicos.jpg");
+  background-blend-mode: darken;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+}
+
+.backgroundimageservicos h1 {
+  color: white;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  padding: 400px;
+}
+
+/*Informação promotora*/
+.Informacao-promotora {
+  background-color:#00354a;
+  padding-bottom: 30px;  
+}
+
+.Informacao-promotora h1 {
+  color: #53abb3;
+  text-align: center;
+  font-size: 70px;
+  top: 50%;
+  padding-top: 50px;
+  padding-bottom: 10px;  
+}
+
+.Informacao-promotora h2 {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  top: 50%;
+  padding-top: 50px;
+  padding-bottom: 50px;  
+}
+
+.Informacao-promotora p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  line-height: 2;  
+}
+
+/*Serviços*/
+.ServiçoPersonalTrainer, .ServiçoNatação, .ServiçoDJ, .ServiçoLoja, .ServicoLoja {
+  position: relative;
+  z-index: -1;  
+}
+
+.ServiçoPersonalTrainer img, .ServiçoNatação img, .ServiçoDJ img, .ServicoLoja img {
+  width:50%;
+  position:relative;
+}
+.ServiçoLoja img {
+  position: relative;
+}
+.ServiçoConsultaNutrição img {
+  width:50%;  
+}
+
+.PT-conteúdo h2, .NT-conteúdo h2, .CN-conteúdo h2, .DJ-conteúdo h2 { 
+  font-size: 50px;
+}
+
+.PT-conteúdo p, .NT-conteúdo p, .CN-conteúdo p, .DJ-conteúdo p  {
+  font-size: 20px;
+  line-height: 2;
+  padding-top: 30px;
+  max-height: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 0;
+  word-spacing: 5px;
+}
+
+
+/*Personal Trainer*/
+.PT-conteúdo {
+  position: absolute;
+  right:0px;
+  top:0px;
+  text-align: center;
+  padding: 50px 0px 200px 0px;
+  width: 50%;
+}
+
+/*Natação*/
+.NT-conteúdo {
+  width:50%;
+  float: left;
+  text-align: center;
+  padding: 50px 0px 100px 0px;
+}
+
+/*Consultas de nutrição*/
+.CN-conteúdo {
+  width:50%;
+  float: right;
+  text-align: center;
+  padding: 50px 0px 100px 0px;
+}
+
+/*DJ*/
+.DJ-conteúdo {
+  width:50%;
+  float: left;
+  text-align: center;
+  padding: 50px 0px 100px 0px;
+}
+
+/*Sugestões de músicas*/
+.musicassujestoes {
+  width:50%;
+  float: right;
+  text-align: center;
+  padding: 50px 200px 100px 200px; 
+}
+
+/* -- Página de informações sobre o treino -- */
+/*Título da página e imagem no fundo*/
+.backgroundimagetreino {
+  background: url("Img/TreinoImage.png");
+  background-size: cover;
+  height: 800px;
+}
+
+.backgroundimagetreino h1 {
+  color: white;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  padding: 400px;
+}
+
+/*Informações sobre o treino*/
+.TreinoConteúdo, .IMCConteudo {
+  margin: 0 10%;
+}
+
+.TreinoConteúdo h2 {
+  font-size: 30px;
+  padding: 30px; 
+  text-transform: uppercase;
+}
+
+.TreinoConteúdo p, .IMCConteudo p {
+  text-align: justify;
+  text-indent: 50px;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  line-height: 3;
+  font-size: 20px;
+}
+
+.TreinoConteúdo ol, li {
+  text-align: justify;
+  text-indent: 20px;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  line-height: 3;
+  font-size: 20px;
+  margin: 20px 0px 20px 60px;
+}
+
+/*Características do treino*/
+.Caracteristicas-treino  {
+  display: flex;
+  border: 10px solid lightgray;
+  width:50%;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom:50px;
+}
+
+.Caracteristicas-treino h2, .Caracteristicas-treino p{
+  padding: 10px;
+  letter-spacing: 1px;
+  word-spacing: 7px;
+  line-height: 1.8;
+  font-size: 20px;
+}
+
+.Caracteristicas-treino h2 {
+  font-size: 30px;
+}
+
+.Planificado, .Sistematico {
+  margin: 10px;
+}
+
+.TreinoImagemConteudo {
+  margin: 2% 10% 0 10%;
+  overflow: hidden;
+  height: 700px;
+  border-radius: 100px;
+}
+
+.TreinográficoConteudo img {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* - Índice de Massa Corporal - */
+#inputsIMC, #resultsIMC{   
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+}
+
+.IMCConteudo {
+  margin-bottom: 70px;
+}
+#inputsIMC input {
+  margin-left: 10px;
+  width: 230px;
+  height: 55px;
+  font-size: 20px;
+  padding: 2%;
+}
+
+/* -- Página com informações sobre os ginásios -- */
+/*Título da página e imagem no fundo*/
+.backgroundimageinfo {  
+  background: rgba(0,0,0, 0.7)url("Img/Gym info.jpg");
+  background-blend-mode: darken;
+  background-size: cover;
+  height: 800px;
+}
+
+.backgroundimageinfo h1 {
+  color: white;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  padding: 400px;
+}
+
+/*Preço*/
+.preco, .horario {
+  margin: 0 10% 20px 10%;
+}
+
+.preco h1 {
+  padding-top: 20px;
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+}
+
+#selecionarIdade {
+  font-size: 23px;
+  width: 300px;
+  float: left;
+}
+
+.selecionarIdade:after {
+  clear:both;
+}
+.PrecoGeralCol {
+  margin-top: 5%;
+}
+.preco h2 {
+  padding: 20px 0 10px 2%;
+  font-size: 25px;
+}
+
+.colunaPreco {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  height: 250px;
+}
+
+.preco:after, .linha:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.preco td, th {
+  padding: 20px;
+  font-size: 20px;
+  background-color: white;
+}
+
+#premium table {
+  border: 3px solid gold;
+}
+
+#premium h2 {
+  color: #ccad00;
+}
+#base h2 {
+  color:#53abb3;
+}
+
+.preco p {  
+  text-align:right;
+}
+
+#Informacao-promotora-premium {
+  background-color: #53abb3;
+  padding: 2% 3%;
+  margin: 100px 0;
+}
+
+#linkQuiz {
+  color:#00354a;  
+}
+
+#linkQuiz:hover {
+  background-color: #00354a;
+  color: white;
+  padding: 1px 5px;
+  border: none;
+  border-radius: 4px;
+}
+
+
+
+/*Horário*/
+.horario th {
+  background-color: #00354a;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+
+.horario td {
+  background-color: white;
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.horario h1, .contactar h1, .experiencia h1 {
+  padding: 30px 0 25px 0;
+  font-size: 35px;
+}
+
+/*Localização*/
+.localizacao {
+  margin-top: 200px;
+  padding: 0 5% 0 10%;
+  background-color: #00354a;
+  height: 850px;
+  color: white;
+}
+
+.localizacao h1 {
+  padding: 30px 0 0 0;
+  font-size: 35px;
+}
+
+.localizahistoria {
+  padding: 20px 20px;
+  font-size: 20px;
+  text-align: justify;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  line-height: 3;
+}
+
+.localizacoesenumeracao {
+  padding: 50px 0 0 0;
+  font-size: 15px;
+  text-align: justify;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  line-height: 3;
+  width: 90%;
+  
+}
+
+#apelo {
+  color: #00adb5;
+  font-size: 30px;
+}
+
+/*Mapa de Portugal com distritos destacados*/
+#Mapa {
+  width: 23%;
+  padding: 10px;
+  float: right;
+}
+
+/*Inquérito de experiência com estrelas*/
+.experiencia label, .experiencia span {
+  font-size: 25px;
+  padding-left: 20px;
+  line-height: 2;
+}
+
+.contactar, .experiencia {
+  margin: 0 10% 20px 10%;
+}
+
+.estrelasExp{
+    color: #bebebe;
+    font-size:2em;
+  margin-left: 15px;
+}
+
+.estrela::before{
+    content:"\002605";
+}
+
+.estrela{
+  font-style: unset !important;  
+}
+
+.estAtiva{
+    color:#ffd700;
+}
+
+.estrela:not(.estAtiva):hover{
+    color: #ccad00;
+}
+
+
+
+#experienciaInput {
+  display: flex;
+  justify-content: space-around;
+  float:left;
+}
+
+
+/*Formuário para contactar*/
+input[type=text], input[type=number], input[type=password],  select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #00354a;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.contactar label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+
+input[type=button] {
+  background-color: #00354a;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #00354a;
+}
+
+.texto {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.form {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/*--- Quiz ---*/
+#mini-quiz-titulo {
+  margin-top: 137px;
+}
+
+.quiz {
+  margin: 3% 10% 10%;
+  font-size: 25px;
+}
+
+.quiz li{
+  font-size: 28px;
+}
+
+.quizResp {
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+
+.quizResp + .quizResp {
+  margin-top: 1em;
+}
+
+#precoQuiz {
+  display: flex;
+  float: right;
+  margin-bottom: 20px; 
+  padding-right: 1.5em;
+}
+
+/*Botões do quiz*/
+.quizResp input[type="radio"] {
+  -webkit-appearance: none;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+.quizResp input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #00354a;
+}
+
+.quizResp input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+/* -- Estilo da página de iniciar sessão e registo -- */
+.bodysessao {
+  background: rgba(0,191,255, 0.7)url("Img/RegistoLogInIMG.jpg");
+  background-blend-mode: darken;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 100vh; 
+}
+
+.iniciosessao {
+  background-color: white;
+  border-radius: 5%;
+  font-size: 18px;
+  font-weight: 500;
+  width: 500px;
+  padding: 36px; 
+}
+
+.form_titulo {
+  margin-bottom: 20px;
+  text-align: center;
+  color:#035372;
+}
+
+.form_input, .form_submit {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.form_msg_erro {
+  margin-bottom: 10px;
+}
+
+.form_input_espaco{
+  margin-bottom: 10px;
+}
+
+.form_input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #00354a;
+  border-radius: 4px; 
+}
+
+.form_submit {
+  width: 100%;
+  padding: 5px 10px;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 20px solid grey;
+  margin-top: 10px;
+  color: #035372;
+  margin-bottom: 40px;
+}
+
+.form_submit:hover {
+  color:#06678e;
+  background-color: white;
+}
+
+.form_submit:active {
+  transform: scale(0.96);
+}
+
+.form_texto {
+  text-align:center;
+  font-size: 20px;
+  color: #6a6868;
+}
+
+.form_link{
+  text-decoration: none;
+  cursor: pointer;
+  color: #035372;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.form_link:hover{
+  text-decoration: underline;
+}
+
+.form_infor{
+  text-align: center;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.form_legal {
+  text-decoration: none;
+  cursor: pointer;
+  color: #4f4f4f;
+  font-weight: bold;
+}
+
+.form_msg_erro {
+  color:red;
+  font-size: 15px;
+}
+
+#form_msg_erro_geral {
+  font-size: 30px;
+  text-align: center;
+}
+
+#visibilidade {
+  color: #035372;
+  cursor: pointer;
+  position: absolute;
+  top: 14px;
+  right: 15px;
+}
+
+#password_conteudo{
+  position: relative;
+}
+
+.Cruz{
+  margin-left: 400px;
+}
+
+.Cruz button{
+  border: none;
+  background-color: white;
+  box-shadow: rgba(0,0,0, 0.5);
+}
+
+.Cruz button:hover span{
+  color: red;
+}
+
+/* -- Loja -- */
+#link {
+  color: white;
+  text-decoration: none;
+}
+.bodyLoja {
+  background-color: white;
+  
+}
+.LojaHead {
+  display: flex;
+  justify-content: space-beetween;
+  align-items: center;
+  background-color: #00354a;
+  color: white;
+  position: sticky;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1; 
+}
+
+.LojaHead h1{
+  font-size: 40px;
+  margin: 30px 30px 30px 100px;
+}
+
+.LojaLinks ul {
+  margin-left: 400px ;
+  padding: 0;
+  display: flex;
+}
+
+@media screen and (max-width:1200px){
+  .LojaLinks ul {
+    margin-left: 0;
+  }
+}
+
+.LojaLinks li {
+  list-style: none;
+  padding:0;
+  margin-left: 30px;
+}
+
+.LojaLinks li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin: 0;
+  padding: 10px 20px 10px 20px;
+}
+
+.LojaLinks li a:hover {
+  color: #53abb3;
+}
+
+.LojaLinks li a span{
+  cursor: pointer;
+}
+
+/* Slider da Loja */
+.ConteudoSlider {
+  width: 100%;
+  background-color: lightgray;
+}
+
+.swiper {
+  width: 80%;
+  height: fit-content;
+  
+}
+
+.swiper-slide {
+  position: relative;
+  text-align: center;
+}
+
+.SliderTexto {
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  background-blend-mode: darken;
+  background-color: rgba(0,0,0, 0.9);
+  border: 1px solid white;
+  width: 100%;
+}
+
+.SliderTextoAlternativo {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.SliderTextoAlternativo h2 {
+  font-size: 70px;
+  color: white;
+  font-weight: 700;
+}
+
+.SliderTextoAlternativo p {
+  font-size: 30px;
+  color: lightgray;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.SliderTextoAlternativo a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: yellow;
+  color: black;
+  border-radius: 50px;
+}
+
+.SliderTextoAlternativo a:hover{
+  background-color: rgba(255,255,0, 0.6);
+}
+
+.SliderTexto h2 {
+  font-size: 70px;
+  color: white;
+  font-weight: 700;
+}
+
+.SliderTexto p {
+  font-size: 30px;
+  color: lightgray;
+  font-weight: 500;
+}
+
+.swiper-slide img {
+  width: 100%;
+  border: 1px solid white;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+  color: #53abb3;
+}
+
+.swiper .swiper-pagination-bullet-active{
+  background: #53abb3; 
+}
+
+.marcas{
+  margin: 50px auto;
+}
+.marcas a{
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+
+.fila{
+  display:flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.coluna1{
+  width: 160px;
+}
+
+.coluna1 img{
+  width: 100%;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+
+.coluna1 img:hover{
+  background-color: #73b8d3;
+  filter: grayscale(0%);
+}
+
+.PSócio h2{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  word-spacing: 2px;
+  margin-bottom: 5px;
+  margin-top: 50px;
+}
+
+.PSócio hr{
+  border: 0;
+  height: 2px;
+  background-color: #53abb3;
+  width:25%;
+  margin: auto;
+}
+
+.PSócio p, h4{
+  text-align: center;
+}
+
+.fila1 {
+  display: flex;
+}
+
+.coluna2 {
+  flex: 50%;
+  padding: 50px;
+  cursor: pointer;
+}  
+
+.coluna2 img {
+  width: 100%;
+  text-align: center;
+}  
+
+.PackIMG {
+  padding-top: 90px;
+}
+
+.CalcadoConteudo, .SweatsConteudo {
+  max-width: 1080px;
+  margin: auto;
+  padding: 0 25px 0 25px;
+}
+
+.fila2 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.coluna3 {
+  flex-basis: 33.33%;
+  padding: 10px;
+  min-width: 200px;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.coluna3 img {
+  width: 100%;
+}
+
+.coluna5 {
+  flex-basis: 12.5%;
+  padding: 10px;
+  min-width: 200px;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.coluna5 img {
+  width: 100%;
+}
+
+.coluna4 {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.coluna4 img {
+  width: 100%;
+}
+
+.coluna3:hover{
+  transform: translateY(-5px);
+}
+
+.coluna4:hover {
+  transform: translateY(-5px);
+}
+
+.coluna5:hover {
+  transform: translateY(-5px);
+}
+
+#detalhesproduto{
+  display:flex;
+  margin-top: 70px;
+}
+
+#detalhesproduto .produtoimg{
+  width: 40%;
+  margin-left: 50px;
+}
+
+.ImagensPequenas{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ImagensPequenasCol{
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+#detalhesproduto .DetalhesEscritos {
+  width: 50%;
+  padding-top: 30px;
+}
+
+#detalhesproduto .DetalhesEscritos h3 {
+  padding: 40px 0 20px 0;
+  font-size: 30px;
+}
+
+#detalhesproduto .DetalhesEscritos h2 {
+  font-size: 26px;
+}
+
+#detalhesproduto .DetalhesEscritos h6 {
+  font-size: 14px;
+}
+
+#detalhesproduto .DetalhesEscritos h6 button {
+  font-size: 14px;
+  float: right;
+}
+
+#detalhesproduto .DetalhesEscritos input {
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#detalhesproduto .DetalhesEscritos select {
+  width: 20%;
+}
+
+#botaocarrinho{
+  background:#53abb3;
+  color: white;
+  border: none;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+#detalhesproduto .DetalhesEscritos span{
+  line-height: 25px;
+}
+
+#topicos{
+  position: sticky;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1; 
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.marcasconteudo a{
+  background-color: white;
+  color: grey;
+}
+
+/* -- Carrinho -- */
+.carrinhoconteudo{
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.pagina-carrinho {
+  margin: 80px auto;
+}
+
+.pagina-carrinho table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.infocarrinho {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.pagina-carrinho th{
+  text-align: center;
+  padding: 5px 30px 5px 30px;
+  color: #fff;
+  background: #053e7a;
+}
+
+.pagina-carrinho img{
+  width: 80px;
+  height: 80px; 
+}
+
+.pagina-carrinho td{
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+}
+
+.produtoInfo{
+  padding: 0;
+}
+.pagina-carrinho input{
+  padding: 5px ;
+  width: 40px;
+  height: 30px;
+}
+
+.pagina-carrinho a{
+  text-decoration: none;
+  font-size: 14px;
+  color: #3c5ab4;
+}
+
+.Precototal{
+  float: right;
+}
+
+.Precototal table{
+  border-top: 3px solid grey;
+  width: 100%;
+  max-width: 350px;
+}
+
+.pagina-carrinho td:last-child{
+  text-align: right;
+}
+
+.pagina-carrinho tr:first-child{
+  text-align: left;
+}
+.BotaoComprar{
+  padding: 10px 20px 10px 20px;
+  width: 100%;
+  border-radius: 30px;
+  background-color: #00354a;
+  color: white;
+}
+.BotaoComprar:hover{
+  background-color: #ffffff;
+  color:#53abb3;
+  
+  
+}
+
+
+/* -- Página com termos e condições e política de privacidade -- */
+.termos, .privacidade {
+  margin: 200px 90px 10px 90px;
+  font-size: 20px;
+  text-align: justify;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  line-height: 3;
+}
+
+.privacidade {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.termos li {
+  margin: 10px 0 0 50px;
+}
+
+.termos p {
+  padding-left: 10px;
+}
+
+#listatermos p {
+  padding: 0 0 0 100px;
+}
+
+/* Rodapé geral */
+.rodape {
+  clear: both;
+  background-color:	hsl(0, 0%, 10%);
+  color: #ffffff;
+  bottom: 0;
+  width: 100%;  
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 1.5%;
+}
+
+.rodape ul {
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  opacity: 0.8;
+}
+
+.rodape li {
+  display: inline-block; 
+}
+
+.rodape ul a {
+  color: inherit;
+}
+
+.rodape ul li a:hover {
+  opacity: 0.6;
+}
+
+.rodape #copyright {
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  
+}
+
+
+.SinalMais{
+  float: right;
+  
+}
+
+/* -- Editar Perfil -- */
+.EditarPerfilConteudo input, .EditarPerfilConteudo option, .EditarPerfilConteudo select {
+  font-size: 20px;
+}
+#editarPerfil {
+  font-size: 30px;
+  padding: 0;
+  
+}
+.parte{
+  width: 60%;
+  background-color: #c7c7c7;
+  height: 300px;
+  margin-top: 20px;
+  border-radius: 40px;
+  
+ 
+  
+}
+.EditarPerfilConteudo{
+  margin-top: 200px;
+  
+ 
+}
+.EditarPerfilConteudo h2{
+  text-align: center;
+  font-size: 30px;
+  color:#00354a;
+}
+
+.EditarPerfilConteudo p{
+  text-align: center;
+  font-size: 20px;
+}
+
+.dadosPerfil input {
+  width: 90%;
+  margin: 0;
+  
+}
+.dadosPerfil {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.DadosAtuais, .DadosAlterar{
+  width: 500px;
+}
+
+.parte {
+  display:flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+
+}
+.botaoValidar{
+  margin-left: 75%;
+  margin-bottom: 30px;
+  border: 2px solid #87e887;
+  background-color: white;
+  color: green;
+  padding: 10px 20px 10px 20px;
+  border-radius: 40px;
+}
+
+::placeholder {
+  font-size: 17px;
+}
+
+/*Sobre a Loja*/
+.backgroundsobreLoja { 
+  background: rgba(0,0,0, 0.7)url("Img/SobreLojaBACK.jpg");
+  background-blend-mode: darken;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+}
+
+.backgroundsobreLojaInfo {
+  color: white;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateY(50%);
+  
+}
+.SobreLojaInfo h2 {
+  width: 80%;
+  font-size: 40px;
+  color: #00354a;
+  word-spacing: 5px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  text-align: center;
+}
+.SobreLojaInfo p{
+  width: 80%;
+  font-size: 20px;
+  word-spacing: 5px;
+  line-height: 50px;
+  text-align: justify;
+}
+
+.SobreLojaIFlex {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.SobreLojaInfoFlex { 
+  height: 125px;
+  width: 300px;
+  border: 3px solid #d1b81a;
+}
+
+.SobreLojaInfoFlex {
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.SobreLojaInfoFlex span {
+  font-size: 70px;
+  text-align: center;
+  color: #daab01;
+  cursor: pointer;
+  
+}
+
+.SobreLojaInfoFlex h4 {
+  cursor: pointer;
+}
+
+.SobreLojaIMG {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display: flex;
+  margin-top: 30px;
+  background-color: #00354a;
+}
+
+.InfoIconSobre {
+  padding: 0 18px;
+  background-color: #00354a;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
+  border-radius: 30px;
+}
+
+.InfoIconSobre p {
+  text-align: center;
+  margin: 5% 0 5% 0;
+  font-weight: 100%;
+  word-spacing: 10px;
+  font-size: 25px;
+  color: white;
+}
+
+.spanSobre {
+  color: #968108;
+}
+
+.ConteudoCor {
+  display: flex;
+  width: 700px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.CoresConfiguracao {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.corTitulo {
+    text-align: center;
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+.corCod {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.CorSelecionada, .CorSalva {
+    height: 15px;
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
+    cursor: pointer;
+  	width: 80%;
+}
+.CorSalva {
+  margin-bottom: 30px;
+}
+
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+	width: 80%;
+	
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
+
+
+/*----------Dados------------*/
+.dados h2:first-child{
+  margin-top: 200px;
+}
+.dados h2{
+  width: 80%;
+  font-size: 40px;
+  color: #00354a;
+  word-spacing: 5px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  text-align: center;
+}
+.FCMInfo{
+  width: 60%;
+  background-color: white;
+  margin-left: 20%;
+  margin-right: 20%;
+  
+  
+}
+.FCMInfo p{
+  font-size: 20px;
+  padding: 15px;
+  margin: 10px;
+  line-height: 50px;
+  
+}
+#ConselhosIMC  {
+   width: 60%;
+  background-color: white;
+  text-align:center;
+  margin-bottom: 50px;
+  
+}
+#ConselhosIMC p:first-child {
+  font-size: 30px;
+  
+}
+#ConselhosIMC p {
+  font-size: 20px;
+  padding: 10px;
+  
+}
+
+.setaCima {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: #00354a;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.fa-arrow-up {
+  color:white;
+}
+
+
+
+
+/*Trabalho realizado por Diogo Rego (nº6) e Diogo Carreira (nº7)*/

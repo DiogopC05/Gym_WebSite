@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<!--Página com informações legais, como termos e condições e política de privacidade-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="Img/Logo Maximal pequeno.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2? family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+  <title>Maximal - InfoLegal</title>
+</head>
+
+<body>
+  <header>
+    <!--Barra de navegação no topo da página-->
+    <nav class='navigation'>
+      <img class="logo" src="Img/Logo Maximal 1.png" alt="logo">
+      <ul class="ulnav">
+        <li><a class='inicio-class' href='./index.html'>Início</a></li>
+        <li><a class='servicos-class' href='./servicos.html'>Serviços</a></li>
+        <li><a class='treino-class' href='./treino.html'>Treino</a></li>
+        <li><a class='info-class' href='./info.html'>Info</a></li>
+        <li class='sessao-class'><input class="imgUser" onclick="CheckInicioSessao()" type="image" src="Img/AccountLogo.png"  id="dropdownBotao"></li></input>
+      </ul>
+       <!--Dropdown Menu-->
+    <div class="menuConteudo" id="menuDropdown">
+        <div class="menuDropdown">
+          <div class="userInfo">
+            <img src="Img/AccountLogo.png" alt="Imagem de Logo" >
+            <h3 id="User_Nome">Utilizador</h3>
+          </div>
+          <hr/>
+
+          <a href="editarPerfil.html" class="menuLink">
+            <span class="material-symbols-outlined">manage_accounts</span>
+            <p>Editar Perfil</p>
+            <div class="seta">></div>
+          </a>
+
+          <a href="#" class="menuLink">
+            <span class="material-symbols-outlined">equalizer</span>
+            <p>Dados</p>
+            <div class="seta">></div>
+          </a>
+
+          <a href="loja.html" class="menuLink">
+            <span class="material-symbols-outlined">storefront</span>
+            <p>Loja</p>
+            <div class="seta">></div>
+          </a>
+
+          <a href="#" class="menuLink">
+            <span class="material-symbols-outlined">login</span>
+            <p>Sair</p>
+            <div class="seta">></div>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <!--Termos e condições-->
+  <div class="termos" id="termos">
+    <h1>Termos e Condições</h1>
+    <p>
+      Ao acessar o site da <em>Maximal</em>, concorda em cumprir e aceitar estes termos de serviço, todas as leis e regulamentos aplicáveis e concorda que é responsável pelo cumprimento de todas as leis locais aplicáveis. Se não concordar com algum destes termos, está proibido de usar ou acessar este site. Os materiais contidos neste site são protegidos pelas leis de direitos autorais e marcas comerciais aplicáveis.
+    </p>
+    <ol id="listatermos">
+      <li>
+        <h2>Isenção de responsabilidade</h2>
+      </li>
+      <p>
+        Os materiais no site da <em>Maximal</em> são fornecidos 'como estão'. A <em>Maximal</em> não oferece garantias, expressas ou implícitas, e, por este meio, isenta e nega todas as outras garantias, incluindo, sem limitação, garantias implícitas ou condições de comercialização, adequação a um fim específico ou não violação de propriedade intelectual ou outra violação de direitos.
+      </p>
+      <li>
+        <h2>Limitações</h2>
+      </li>
+      <p>
+        Em nenhum caso a <em>Maximal</em> ou os seus fornecedores serão responsáveis por quaisquer danos (incluindo, sem limitação, danos por perda de dados ou lucro ou devido a interrupção dos negócios) decorrentes do uso ou da incapacidade de usar os materiais em <em>Maximal</em>, mesmo que a Maximal ou um representante autorizado da <em>Maximal</em> tenha sido notificado oralmente ou por escrito da possibilidade de tais danos. 
+      </p>
+      <li>
+        <h2>Modificações</h2>
+      </li>
+      <p>
+        A <em>Maximal</em> pode rever e alterar estes termos de serviço do site a qualquer momento, sem aviso prévio. Ao usar este site, concorda em ficar de acordo com a versão atual dos termos e condições de serviço.
+      </p>
+    </ol>
+  </div>
+  
+  <!--Informações sobre a nossa política de privacidade-->
+  <div class="privacidade" id="privacidade">
+    <h1>Política de Privacidade</h1>
+    <p>
+      A sua privacidade é importante para nós. É política da <em>Maximal</em> respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no nosso website.<br>
+      Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento.<br>
+      Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente aceitáveis para evitar perdas e roubos, bem como acesso, divulgação, cópia, uso ou modificação não autorizados.<br>
+      Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei.<br>
+      O nosso site pode ter links para sites externos que não são operados por nós. Esteja ciente de que não temos controle sobre o conteúdo e práticas desses sites e não podemos aceitar responsabilidade por suas respetivas políticas de privacidade.<br>
+      O uso continuado de nosso site será considerado como aceitação de nossas práticas em torno de privacidade e informações pessoais. Se tiver alguma dúvida sobre como lidamos com dados do usuário e informações pessoais, entre em contacto connosco.
+    </p> <br>
+    
+    <!--Apresentação da data corrente-->
+    <p id="data"></p>
+  </div>
+     
+  <!--Rodapé-->
+  <div class="rodape">
+    <footer>
+      <p id="copyright">Maximal © <span id="ano"></span> | Todos os direitos reservados</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+<!--Trabalho realizado por Diogo Rego (nº6) e Diogo Carreira (nº7)-->

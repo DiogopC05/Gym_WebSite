@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<!--Página com informações sobre a Loja Online-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="Img/Logo Maximal pequeno.png">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <title>Maximal - Sobre a Loja Online</title>
+</head>
+
+<body class="bodyLoja">
+  <header>
+    <div class="LojaHead">
+      <h1><a href="loja.html" id="link">Loja Maximal</a></h1>
+      <div class="LojaLinks">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="carrinho.html"><span class="material-symbols-outlined">shopping_cart</span><span
+                id="quantidadeP"></span></a></li>
+          <li class='sessao-class'><input class="imgUser" onclick="CheckInicioSessao()" type="image"
+              src="Img/AccountLogo.png" id="imgUser"></li></input>
+        </ul>
+        <!--Dropdown Menu-->
+        <div class="menuConteudo" id="menuDropdown">
+          <div class="menuDropdown">
+            <div class="userInfo">
+              <img src="Img/AccountLogo.png" alt="Imagem de Logo" id="avatar">
+              <h3 id="User_Nome">Utilizador</h3>
+            </div>
+            <hr />
+
+            <a href="editarPerfil.html" class="menuLink">
+              <span class="material-symbols-outlined">manage_accounts</span>
+              <p>Editar Perfil</p>
+              <div class="seta">></div>
+            </a>
+
+            <a href="dados.html" class="menuLink">
+              <span class="material-symbols-outlined">equalizer</span>
+              <p>Dados</p>
+              <div class="seta">></div>
+            </a>
+
+            <a href="#" class="menuLink" onclick="LogOut()">
+              <span class="material-symbols-outlined">login</span>
+              <p>Sair</p>
+              <div class="seta">></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="backgroundsobreLoja">
+      <div class="backgroundsobreLojaInfo">
+        <h1>Sobre a Loja</h1>
+        <p>É em si que pensamos em primeiro lugar!</p>
+      </div>
+    </div>
+  </header>
+  <div class=SobreLojaInfo>
+    <div class="SobreLojaInfo">
+      <h2>Uma loja para as suas necessidades</h2>
+      <p>Bem-vindo à loja online do Maximal Gym, onde pode encontrar uma ampla variedade de equipamentos e suplementos
+        de fitness para lhe ajudar a atingir os seus objetivos. Oferecemos entregas rápidas e fiáveis, bem como uma
+        experiência de compras amigável ao utilizador. A nossa loja é segura e fácil de navegar, tornando-a o local
+        perfeito para fazer compras de todas as suas necessidades de fitness. Temos uma vasta seleção de equipamentos de
+        musculação, cardio, bem como suplementos alimentares e acessórios para lhe ajudar a atingir os seus objetivos de
+        forma eficiente e segura. Não hesite em entrar em contacto connosco caso tenha alguma dúvida ou necessite de
+        ajuda para escolher os produtos certos para si. Estamos sempre disponíveis para ajudar.</p>
+    </div>
+
+  </div>
+  <div class="SobreLojaIFlex">
+    <div class="SobreLojaInfoFlex" onclick="sobre(0)">
+      <span class="material-symbols-outlined">
+        eco</span>
+      <h4>Ambiente</h4>
+
+    </div>
+    <div class="InfoIconSobre" id="sobre0">
+      <p>A loja online da Maximal é amiga do meio ambiente através de diversas medidas, tais como: oferecer opções de
+        entrega por meios de transporte mais sustentáveis, como bicicletas ou veículos elétricos e na promoção de
+        produtos feitos com materiais recicláveis e de fontes renováveis.</p>
+
+    </div>
+    <div class="SobreLojaInfoFlex" onclick="sobre(1)">
+      <span class="material-symbols-outlined">
+        support_agent</span>
+      <h4>Suporte</h4>
+    </div>
+    <div class="InfoIconSobre" id="sobre1">
+      <p>A loja online da Maximal tem uma excelente equipa de suporte através da contratação de pessoas com boa
+        capacidade de comunicação e habilidade para resolver problemas, funcionários para atender às necessidades dos
+        clientes de forma eficiente e amigável e na oferta de canais de atendimento, como e-mail, chat, telefone e redes
+        sociais, para que os clientes possam escolher o método que preferem.</p>
+    </div>
+    <div class="SobreLojaInfoFlex" onclick="sobre(2)">
+      <span class="material-symbols-outlined">
+        follow_the_signs</span>
+      <h4>Inovação</h4>
+    </div>
+    <div class="InfoIconSobre" id="sobre2">
+      <p>A loja online da Maximal tem inovação graças ao investimento em pesquisa e desenvolvimento para oferecer
+        produtos e serviços inovadores, audição atenta das opiniões e sugestões dos clientes para entender suas
+        necessidades e ao desenvolvimento de soluções que atendam a elas, e através da fomentação da criatividade e do
+        pensamento fora da caixa entre os funcionários para estimular ideias inovadoras.</p>
+    </div>
+    <div class="SobreLojaInfoFlex" onclick="sobre(3)">
+      <span class="material-symbols-outlined">
+        emoji_transportation</span>
+      <h4>Rapidez</h4>
+    </div>
+    <div class="InfoIconSobre" id="sobre3">
+      <p>A loja online da Maximal pode ser rápida na entrega através das várias medidas, tais como: utilizar serviços de
+        transporte de qualidade para garantir que os produtos cheguem aos clientes rapidamente, armazenar os produtos em
+        um local estratégico para facilitar a logística e garantir a rapidez na entrega e processar os pedidos
+        rapidamente e enviar os produtos logo após a confirmação do pagamento.</p>
+    </div>
+
+  </div>
+  <div class=SobreLojaInfo>
+    <div class="SobreLojaInfo">
+      <h2>Uma equipa fenomenal</h2>
+      <p>A <em>Maximal</em> tem uma <strong>equipa fenomenal</strong> que se destaca pelo seu compromisso e dedicação em
+        atender às necessidades dos clientes. Com profissionais altamente qualificados e habilidosos, a equipa da
+        Maximal é capaz de oferecer um atendimento excecional, tornando a loja uma referência em serviços de qualidade e
+        eficiência.
+      </p><br>
+      <p>
+        A equipa da <em>Maximal</em> é composta por pessoas com habilidades variadas e experiência em vários setores, o
+        que <strong>permite atender às necessidades dos clientes de forma completa e personalizada.</strong> Além disso,
+        a equipa é constantemente treinada e atualizada, para garantir que os clientes sempre tenham acesso a soluções
+        precisas e eficazes.
+      </p><br>
+      <p>
+        A equipa esforça-se para manter uma <strong>comunicação clara e transparente com os clientes</strong>,
+        garantindo que eles sempre saibam o status de seus pedidos e possam esclarecer qualquer dúvida ou problema
+        rapidamente. O atendimento é oferecido em vários canais, incluindo e-mail, chat, telefone e redes sociais, para
+        que os clientes possam escolher o método que preferem.
+      </p><br>
+      <p>
+        Também nos destacamos pela <strong>capacidade de inovar e de adaptação às mudanças do mercado</strong>, sempre
+        buscando oferecer novos produtos e serviços que atendam às necessidades dos clientes de forma inovadora e
+        diferenciada.
+      </p><br>
+      <p>
+        Assim, a loja online <em>Maximal</em> tem uma equipa fenomenal, comprometido com a qualidade e a eficiência, com
+        o grande objetivo de <strong class="spanSobre">oferecer o melhor atendimento e serviços para os seus
+          clientes</strong>.</p>
+    </div>
+
+    <div class="SobreLojaIMG">
+      <img src="Img/SobreLojaIMG.jpg">
+    </div>
+
+    <div class="rodape">
+      <footer>
+        <ul class="rodape-lista">
+          <li class="rodape-lista"><a href="./infolegal.html">Termos e Condições</a></li>
+          <li class="rodape-lista"><a href="./infolegal.html">Política de privacidade</a></li>
+          <li class="rodape-lista"><a href="https://www.livroreclamacoes.pt/" target="_blank">Livro de Reclamações</a>
+          </li>
+        </ul>
+        <p id="copyright">Maximal © <span id="ano"></span> | Todos os direitos reservados</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!--Trabalho realizado por Diogo Rego (nº6) e Diogo Carreira (nº7)-->

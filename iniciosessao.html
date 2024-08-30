@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<!--Página que permite iniciar sessão do utilizador-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="Img/Logo Maximal pequeno.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   
+
+  <title>Maximal - Iniciar Sessão</title>
+</head>
+
+<body class="bodysessao">
+  <div class="iniciosessao">
+    <form class="form_user" id="iniciarsessao">
+      <div class="Cruz">
+        <button type="button" onclick="CruzMain()">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <h1 class="form_titulo">Início de Sessão</h1>
+      <div class="form_msg_erro" id="form_msg_erro_geral"></div>
+      <div class="form_input_espaco">
+        <input type="text" class="form_input" id="email_i" required autofocus placeholder="E-mail">
+      </div>
+      <div class="form_input_espaco">
+        <input type="password" class="form_input" id="pass_i" required autofocus placeholder="Password">
+      </div>
+      <button class="form_submit" type="submit">CONTINUAR</button>
+      <p class="form_texto" >Ainda não se registou? <br><a href="registo.html" class="form_link">Registe-se!</a></p>
+      
+      
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+  
+</html>
+
+<!--Trabalho realizado por Diogo Rego (nº6) e Diogo Carreira (nº7)-->
