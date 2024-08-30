@@ -1,7 +1,7 @@
 // ---- Código geral ----
 now = new Date();
 
-//Define o id "ano", o ano e concatina 1997 com o ano anual, mostrado na secção copyright do rodapé em todas as páginas
+//Define o id "ano", o ano e concatena 1997 com o ano anual, mostrado na secção copyright do rodapé em todas as páginas
 let ano = now.getFullYear();
 let anoId = document.getElementById("ano");
 if (anoId) {
